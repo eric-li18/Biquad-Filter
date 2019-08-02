@@ -25,7 +25,7 @@ Plotted with `gnuplot`
 - biquad.c
   - an implementation of the difference equation given by :
 
-![Difference Equation](http://latex.codecogs.com/svg.latex?%5C%5Cy_k%3DG%28x_k%2BAx_%7Bk-1%7D%2BBx_%7Bk-2%7D%29-Cx_%7Bk-1%7D-Dx_%7Bk-2%7D%5C%5C%5B0.5%5Cbaselineskip%5D%0D%0AG%2CA%2CB%2CC%2CD%5Cin%5Cmathbb%7BR%7D%2C%5C+%5C%7Bx_i%5C%7D_%7Bi%3D0%7D%5E%7Bn-1%7D%2C%5C%7By_i%5C%7D_%7Bi%3D0%7D%5E%7Bn-1%7D%5Cin%5Cmathbb%7BR%7D)
+    ![Difference Equation](http://latex.codecogs.com/svg.latex?%5C%5Cy_k%3DG%28x_k%2BAx_%7Bk-1%7D%2BBx_%7Bk-2%7D%29-Cx_%7Bk-1%7D-Dx_%7Bk-2%7D%5C%5C%5B0.5%5Cbaselineskip%5D%0D%0AG%2CA%2CB%2CC%2CD%5Cin%5Cmathbb%7BR%7D%2C%5C+%5C%7Bx_i%5C%7D_%7Bi%3D0%7D%5E%7Bn-1%7D%2C%5C%7By_i%5C%7D_%7Bi%3D0%7D%5E%7Bn-1%7D%5Cin%5Cmathbb%7BR%7D)
 - cascade.c
   - utilizes biquad.c to create multiple pipelines of biquad.c for use in filtering
 
