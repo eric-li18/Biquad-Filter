@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #define HEADERSIZE 44
+//Credited to Professor Albert Lai
 
 int main(void)
 {

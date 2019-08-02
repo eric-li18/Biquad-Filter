@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<sys/wait.h>
 #include<unistd.h>
+//Credited to Eric Li
 
 int main(int argc, char *argv[]){
 	int n = (argc-1)/5;

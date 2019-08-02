@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//Credited to Eric Li
 int main(int argc, char *argv[]){
 	double input_arr[3] = {0,0,0}; 
 	double output_arr[2] = {0,0};
