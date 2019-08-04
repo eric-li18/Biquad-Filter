@@ -9,7 +9,7 @@ An implementation of a biquad filter that suppresses high frequencies while pres
 
 ![Graph](./images/graph.jpg)
 
-Plotted with `gnuplot` 
+Plotted with `gnuplot` showing the frequencies of the "ugly.wav" file pre-filtering (ugly.txt), and the resulting suppression of high frequencies as "out.wav" (out.txt).
 
 ## Files
 ### Work supplied by, and credited to Professor Albert Lai:
@@ -19,7 +19,7 @@ Plotted with `gnuplot`
   - converts output of program to a WAV file
 - ugly.wav
   - starting frequency to work with
-- All command line arguments and pipelines
+- All shell commands and pipelines
 
 ### Personal Work
 - biquad.c
@@ -28,9 +28,26 @@ Plotted with `gnuplot`
     ![Difference Equation](http://latex.codecogs.com/svg.latex?%5C%5Cy_k%3DG%28x_k%2BAx_%7Bk-1%7D%2BBx_%7Bk-2%7D%29-Cx_%7Bk-1%7D-Dx_%7Bk-2%7D%5C%5C%5B0.5%5Cbaselineskip%5D%0D%0AG%2CA%2CB%2CC%2CD%5Cin%5Cmathbb%7BR%7D%2C%5C+%5C%7Bx_i%5C%7D_%7Bi%3D0%7D%5E%7Bn-1%7D%2C%5C%7By_i%5C%7D_%7Bi%3D0%7D%5E%7Bn-1%7D%5Cin%5Cmathbb%7BR%7D)
 - cascade.c
   - utilizes biquad.c to create multiple pipelines of biquad.c for use in filtering
+- run.sh
+  - a file created from provided commands for ease of compiling
+## Compilation
+To run the files, I have created a small shell script to ease the compiling process.
 
-## Running the Files
-Requires a C compiler and *nix Environment
+### Options
+`-b` runs the biquad pipeline
+
+`-c` runs the cascade file
+
+`-g` graphs the plot above (requires `gnuplot` installation)
+
+E.g.
+```shell
+$ ./run.sh -b
+```
+Notes about the file compilation and compiling separately with different arguments is provided below, this script is only for working with the ugly.wav file we are provided here.
+
+## About Compilation
+Requires a C compiler and *nix Environment before you can play around with arguments
 
 Listen to ugly.wav
 
